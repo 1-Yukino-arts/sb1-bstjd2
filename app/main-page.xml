@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Organizador de Imagens">
+        <ActionItem tap="onAddImage" ios.position="right" android.position="actionBar">
+            <Label text="+" class="text-2xl" />
+        </ActionItem>
+    </ActionBar>
+
+    <StackLayout>
+        <Label text="{{ message }}" class="text-center p-4" />
+        <Button text="Adicionar Imagem" tap="onAddImage" class="btn btn-primary m-4" />
+    </StackLayout>
+</Page>
